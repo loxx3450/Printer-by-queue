@@ -6,7 +6,6 @@ class Employee
 {
 private:
 	std::string job_title;
-
 	int status;
 
 public:
@@ -19,6 +18,11 @@ public:
 		job_title{title},
 		status{val}
 	{}
+
+	operator int() const
+	{
+		return this->status;
+	}
 
 	void setTitle(std::string title)
 	{
