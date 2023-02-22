@@ -44,5 +44,11 @@ public:
 		return this->status;
 	}
 
+	friend std::ostream& operator<<(std::ostream& out, const Employee& obj)
+	{
+		out << "The name of job: " << obj.getTitle() << ", status: " << obj.getStatus();
+
+		return out;
+	}
 };
 

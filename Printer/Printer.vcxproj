@@ -139,9 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\queue prs on\ConsoleApplication17\Queue.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Printer.cpp" />
     <ClCompile Include="templates.cpp" />
   </ItemGroup>
   <ItemGroup>

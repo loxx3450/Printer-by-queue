@@ -24,11 +24,28 @@ public:
 	void addDocument(const Document<T>& document, const Employee& employee)
 	{
 		q.enqueue(document, (int)employee);
+
+		std::cout << "We added document from " << document.getName() << "(" << employee.getTitle() << ")" << " by " << document.getData() << "\n\n";
 	}
 
-	Document<T> getDocument()
+	Document<T>* getDocument()
 	{
-		return *q.dequeue();
+		return q.dequeue();
+	}
+
+	std::string getName() const
+	{
+		return this->name;
+	}
+
+	int getCount() const
+	{
+		return q.getCount();
+	}
+
+	void show() const
+	{
+		q.show();
 	}
 };
 
