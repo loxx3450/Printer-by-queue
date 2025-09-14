@@ -1,0 +1,1 @@
+The program simulates a printing system with a queue of documents. Each Document is associated with an Employee, and the queue ensures that documents are processed in the order they were added. The Printer class manages the queue and allows documents to be retrieved sequentially for printing.
